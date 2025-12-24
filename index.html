@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiğit Avar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+</head>
+
+<body>
+    
+<header id="main__header">
+  <div class="container nav-container">
+    <h1 class="main-header__logo">Yiğit Avar Portfolio</h1>
+    <input class="menu-toggle" type="checkbox" id="nav-toggle">
+    <label class="hamburger-lines" for="nav-toggle">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+    </label>
+
+    
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li><a class="btnn btnn-outline-primary" href="#hero" onclick="document.getElementById('nav-toggle').checked = false">Home</a></li>
+        <li><a class="btnn btnn-outline-primary" href="#about" onclick="document.getElementById('nav-toggle').checked = false">About</a></li>
+        <li><a class="btnn btnn-outline-primary" href="#skills" onclick="document.getElementById('nav-toggle').checked = false">Skills</a></li>
+        <li><a class="btnn btnn-outline-primary" href="#projects" onclick="document.getElementById('nav-toggle').checked = false">Projects</a></li>
+        <li><a class="btnn btnn-outline-primary" href="#contact" onclick="document.getElementById('nav-toggle').checked = false">Contact</a></li>
+        <li>
+          <button id="theme-toggle" title="Switch Theme">
+              <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="hero">
+  <div class="container">
+    <h2>Hi, I'm Yiğit Avar</h2>
+    <p>Computer Engineering Student</p>
+    <img src="images/vesikalık.jpg" alt="Portrait of Yiğit Avar">
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>ABOUT ME</h2>
+      <div class="row">
+        <div class="aboutme-card">
+        
+          Final-year Computer Engineering student with experience in IT infrastructure,
+          automation, and backend development. Skilled in Active Directory, RPA, Power BI,
+          Java, Spring Boot, React, and PostgreSQL. Experienced through internships in IT
+          support and defense industry software, with proven ability to deliver real-world
+          projects.
+          
+        </div>
+      </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="row">
+        <div class="skills-card col-md-6">
+              <strong>Enterprise IT:</strong> Active Directory, Office 365, PowerBI, RPA (Robusta)
+        </div>   
+        <div class="skills-card col-md-6">
+            <strong>Backend & Databases:</strong> Java, Spring Boot, PostgreSQL, SQL
+        </div>      
+        <div class="skills-card col-md-6">
+            <strong>Frontend & Tools:</strong> React, HTML, CSS, Qt (C++)
+        </div>
+        <div class="skills-card col-md-6">
+            <strong>Other:</strong> Matlab/Simulink, C/C++
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="row">
+      <div class="project-card col-md-6">
+        <strong>🍽 Restaurant Reservation System:</strong> Build a full-stack reservation system for restaurants with role-based dashboard and calendar scheduling.
+        <ul>
+            <li>Developed REST API with Spring Boot and MySQL</li>
+            <li>Created React frontend with dynamic reservation management</li>
+            <li>Implemented multi-role access (Admin, Manager, Restaurant Owner)</li>
+            <li>Live availability calendar, booking logic, user auth</li>
+            <li>Deployment-ready architecture</li>
+        </ul>
+        <p>Stack: Spring Boot, React, MySQL, JPA, JWT, Bootstrap</p>
+    </div>
+    <div class="project-card col-md-6">
+        <strong>🎥Cinema Center App:</strong> Desktop ticketing and management system for cinema halls.
+        <ul>
+            <li>JavaFX UI, MySQL backend, seat selection logic</li>
+            <li>Admin panel for scheduling & reporting</li>
+            <li>OOP based modular architecture</li>
+        </ul>
+        <p>Stack: Java, JavaFX, MySQL</p>
+    </div>
+    <div class="project-card col-md-6">
+        <strong>🛴Scooter Speed Control Simulation (FİGES):</strong> Simulated speed-control system for e-scooters using control engineering principles.
+        <ul>
+            <li>Matlab & Simulink modeling</li>
+            <li>PID-based speed regulation under variable conditions</li>
+            <li>Performance evaluation and stability testing</li>
+            <li>Worked with engineering mentor from FİGES</li>
+        </ul>
+        <p>Stack: Matlab, Simulink</p>
+    </div>
+    <div class="project-card col-md-6">
+        <strong>🖥 C++/Qt Logging & Database Manager:</strong> Desktop debugging tool for logging events and storing them in PostgreSQL.
+        <ul>
+            <li>Qt-based GUI, modular logging system</li>
+            <li>PostgreSQL connection, CRUD operations</li>
+            <li>Clean UI, multi-thread safe logging</li>
+        </ul>
+        <p>Stack: C++, Qt, PostgreSQL  </p>
+    </div>  
+    </div>
+    
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="https://github.com/YigitAvar"><i class="fa-brands fa-github fa-3x icon-box"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/yi%C4%9Fit-avar-567a38299/"><i class="fa-brands fa-linkedin fa-3x icon-box"></i></a></li>
+      <li><a href="https://www.instagram.com/yigitavar/"><i class="fa-brands fa-instagram fa-3x icon-box"></i></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer id="main__footer">
+  <div class="container">
+    © 2025 Yiğit Avar — NMD313 Assignment
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
