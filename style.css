@@ -165,15 +165,16 @@ section
     font-weight: bold;
 }
 #hero img {
-  width: 180px;
-  border-radius: 60%;
-  box-shadow: rgba(0,0,0,0.12) 0px 10px 20px;
-  transition: transform .3s ease, box-shadow .3s ease;
+    width: 180px;
+    border-radius: 60%;
+    box-shadow: rgba(0,0,0,0.12) 0px 10px 20px;
+    transition: transform 800ms cubic-bezier(.2,.8,.2,1), box-shadow 800ms cubic-bezier(.2,.8,.2,1);
+    will-change: transform, box-shadow;
 }
 
 #hero img:hover {
-  transform: scale(1.03);
-  box-shadow: rgba(0,0,0,0.18) 0px 20px 40px;
+    transform: scale(1.04) translateZ(0);
+    box-shadow: rgba(0,0,0,0.22) 0px 24px 48px;
 }
 #about
 {
@@ -211,19 +212,20 @@ section .container
 
 .project-card, .skills-card, .aboutme-card
 {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: rgba(0,0,0,0.08) 0 4px 12px;
-  transition: .3s ease;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0,0,0,0.08) 0 4px 12px;
+        transition: transform 800ms cubic-bezier(.2,.8,.2,1), box-shadow 800ms cubic-bezier(.2,.8,.2,1), background-color 600ms ease;
+        will-change: transform, box-shadow;
+        transform: translateZ(0);
 }
 
 .project-card:hover , .skills-card:hover , .aboutme-card:hover
 {
-  transform: translateY(-4px);
-  box-shadow: rgba(0,0,0,0.16) 0 6px 18px;
-  transition: all 0.3s ease;
+    transform: translateY(-6px) translateZ(0);
+    box-shadow: rgba(0,0,0,0.18) 0 10px 30px;
 }
 
 .project-card p:last-child
