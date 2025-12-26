@@ -223,6 +223,7 @@ section .container
 {
   transform: translateY(-4px);
   box-shadow: rgba(0,0,0,0.16) 0 6px 18px;
+  transition: all 0.3s ease;
 }
 
 .project-card p:last-child
